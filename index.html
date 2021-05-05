@@ -1,5 +1,6 @@
 <html>
   <head>
+	<meta charset="UTF-8" />
     <title>測試用網頁</title>
 	
 	<style>
@@ -12,13 +13,14 @@
 	</style>
 	
 	<script>
-	  function jumpTo(url,para) {
+	  function jumpTo(url,val) {
+		var para = btoa(encodeURIComponent(val));
 		document.location.href = url+"?val="+para;
 	  }
 	</script>
   </head>
   
   <body>
-    <button onClick=jumpTo("sPage.html","JustAParameter")>send a value to next page</button>
+    <button onClick=jumpTo("sPage.html","JustAParameter唷")>send a value to next page</button>
   </body>
 </html>

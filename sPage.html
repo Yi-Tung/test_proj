@@ -1,5 +1,6 @@
 <html>
   <head>
+	<meta charset="UTF-8" />
     <title>測試用網頁2</title>
 	
 	<style>
@@ -15,7 +16,9 @@
 	  function ini() {
 		var searcher = window.location.search;
 		var urlParams = new URLSearchParams(searcher);
+		
 		var para = urlParams.get('val');
+		para = decodeURIComponent(atob(para));
 	  
 		alert(para);
 	  }
