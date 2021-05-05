@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>測試用網頁2</title>
+	
+	<style>
+	  button {
+		font-size: 40px;
+	  }
+	  body {
+		text-align: center;
+	  }
+	</style>
+	
+	<script>
+	  function ini() {
+		var searcher = window.location.search;
+		var urlParams = new URLSearchParams(searcher);
+		var para = urlParams.get('val');
+	  
+		alert(para);
+	  }
+	
+	  function jumpTo(url,para) {
+		document.location.href = url+"?val="+para;
+	  }
+	</script>
+  </head>
+  
+  <body onload=ini()>
+    <button onClick=jumpTo("index.html","")>回歸</button>
+  </body>
+</html>

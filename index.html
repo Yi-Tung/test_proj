@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>測試用網頁</title>
+	
+	<style>
+	  button {
+		font-size: 40px;
+	  }
+	  body {
+		text-align: center;
+	  }
+	</style>
+	
+	<script>
+	  function jumpTo(url,para) {
+		document.location.href = url+"?val="+para;
+	  }
+	</script>
+  </head>
+  
+  <body>
+    <button onClick=jumpTo("sPage.html","JustAParameter")>send a value to next page</button>
+  </body>
+</html>
