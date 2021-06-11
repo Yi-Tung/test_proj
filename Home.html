@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="./lib/vue/vue.global.js"></script>
+    <script src="./base.js"></script>
+  </head>
+  
+  <body id="app">
+    <nav></nav>
+	<main>
+	  {{ msg }} <br>
+	  <span>{{ hello }}</span><br>
+	  <button onClick=jumpTo('index.html')>Jump</button>
+	</main>
+	<footer></footer>
+	
+	<script>
+	  const app = {
+		  data() {
+		    return {
+			  msg: 'Hello', 
+			  hello: 'xx'
+			}
+		  }, 
+		  mounted() {
+			common();
+			this.hello = '終於成功蛻變';
+			
+			alert('sucess');
+		  }, 
+		  methods: {
+			test() {
+			  
+			}
+		  }
+		};
+		var myVue = Vue.createApp(app);
+		myVue.mount("#app");
+	</script>
+  </body>
+</html>

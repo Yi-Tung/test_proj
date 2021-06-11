@@ -1,0 +1,10 @@
+
+src:	https://unpkg.com/vue@3.0.11/dist/vue.global.js
+
+version: 3.0.11
+
+describe:
+
+  For prototyping or learning purposes, you can use the latest version with:
+
+  <script src="https://unpkg.com/vue@next"></script>
