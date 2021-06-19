@@ -9,6 +9,9 @@
   </head>
   
   <body id="app">
+    <noscript>
+	  <div id="no-script">No Support Javascript</div>
+	</noscript>
     <nav></nav>
 	<main>
 	  {{ msg }} <br>
@@ -40,8 +43,5 @@
 		var myVue = Vue.createApp(app);
 		myVue.mount("#app");
 	</script>
-	<noscript>
-	  <div id="no-script">No Support Javascript</div>
-	</noscript>
   </body>
 </html>
