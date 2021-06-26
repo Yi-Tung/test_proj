@@ -1,5 +1,5 @@
 {
-  name: 'Tung', 
-  born: '84', 
-  old: '25'
+  "name": "Tung", 
+  "born": "84", 
+  "old": "25"
 }
