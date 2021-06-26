@@ -1,5 +1,20 @@
 {
   "name": "Tung", 
   "born": "84", 
-  "old": "25"
+  "old": "25", 
+  "skill": 
+  [
+    {
+	  "name": "C",
+	  "type": "IoT"
+	},
+	{
+	  "name": "Java",
+	  "type": "應用程式"
+	}, 
+	{
+	  "name": "Javascript",
+	  "type": "網頁前端"
+	}
+  ]
 }
