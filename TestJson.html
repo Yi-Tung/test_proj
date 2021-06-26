@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>測試讀取json</title>
+	
+	<script>
+	  function ini() {
+	    var json = loadFile('https://yi-tung.github.io/test_proj/data.json');
+		
+		var str = '';
+		if(typeof JSON.parse) {
+		  alert('exist');
+		  var data = JSON.parse(json);
+		  str += 'Name: '+data['name']+'<br>';
+		  str += 'Born: '+data['born']+'<br>';
+		  str += 'Old: '+data['old']+'<br>';
+		}
+		var container = document.getElementById('container');
+		container.innerHTML = str;
+	  }
+	  
+	  function loadFile(filePath) {
+	    var result = null;
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", filePath, false);
+		xmlhttp.send();
+		if (xmlhttp.status==200) {
+		  result = xmlhttp.responseText;
+		}
+		return result;
+	  }
+	</script>
+  </head>
+  
+  <body onload=ini()>
+    <div id="container"></div>
+  </body>
+</html>
